@@ -6,6 +6,8 @@
 
     p{
         text-align: justify;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:dimgray;
     }
     #columna1 {
         position:absolute;
@@ -21,8 +23,7 @@
         margin-top:20px;
         background-color:white;
     }
-    
-    
+        
     h2,h3{
         background-color: rgb(61, 73, 73);
         text-align: center;
@@ -47,21 +48,21 @@
     
     }    
 
+    .datos{
+        background-color: white;
+        color: black;
+    }
+
     #perfil{
         position:relative;
         max-width:100%;
-        max-height:1800%;
+        max-height:180%;
         
     }
-    
-    #telefono{
-        max-width:15%;
-        max-height:15%;
+    #telefono,#mensaje,#direccion{
+        width: 40px;
     }
-    #mensaje{
-        max-width:15%;
-        max-height:15%;
-    }
+
     table{
         background-color: rgb(61, 73, 73);
         color:white;
@@ -73,4 +74,40 @@
     #col2{
         width: 250px;
         text-align: center;
-     }
+        border: solid 3px black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+   
+    #dato1{
+        width: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #dato3{
+        width: 300px;
+        text-align:justify;
+        color:dimgray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+    }
+
+    #dato2{
+        width: 10px;
+        color:dimgray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size:10px ;
+    }
+
+    #barra{
+        width: 247px;
+        height: 20px;
+    }
+    #hab1{
+        color:brown;
+    }
+    #dato4{
+        width: 300px;
+        text-align:justify;
+        color:dimgray;
+    }
+    
+    
