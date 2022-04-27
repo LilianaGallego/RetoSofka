@@ -18,9 +18,10 @@
         background-color:white;    
     }
     #columna2 {
-        margin-left:200px;
-        margin-right:50px;
+        margin-left:380px;
+        margin-right:10px;
         margin-top:20px;
+        width:650px;
         background-color:white;
     }
         
@@ -53,7 +54,13 @@
         color: black;
     }
 
-    #perfil{
+    .exp{
+        background-color: white;
+        color: black;
+        
+    }
+
+    #img{
         position:relative;
         max-width:100%;
         max-height:180%;
@@ -111,3 +118,39 @@
     }
     
     
+    #imgexp{
+        position:relative;
+        max-width:80%;
+        max-height:180%;
+        
+    }
+    
+    #col3{
+        width: 450px;
+        text-align: center;
+        border: solid 3px black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #col4,#exp,#est{
+        text-align:left;
+        width: 515px;
+        background-color: white;
+        color: black
+    }
+    #col5{
+        text-align:right;
+        width: 100px;
+        background-color: white;
+        color: brown
+    }
+    
+    #txtexp, #txtest{
+        font-size: small;
+        width:10;
+        text-align: justify;
+        background-color: white;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:dimgray;
+    }
