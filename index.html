@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HV Martha Liliana Gallego Murillo</title>
+    <script type="text/javascript" src="index.js"></script>
     <link rel="StyleSheet" href="index.css" type="text/css">
 </head>
 
-<body>
-    <div id="columna1">
+<body id="fondo">
+    <div id="contenedor" class="changeBG">
+        <button type="button" id="btn-color" onclick="cambiarColor()"></button>
 
+    </div>
+    <div id="columna1">
+        
         <img class="foto" src="imagen/fotomlgm.png">
 
         <h2>MARTHA GALLEGO</h2>
@@ -42,8 +47,8 @@
                     <img id="telefono" src="imagen/telefono.png">
                 </td>
                 
-                <td id="dato3">
-                    <b>
+                <td id="dato">
+                    <b  id="dato2">
                         +573118688145     +573163590645 
                     </b>
                 </td>
@@ -55,8 +60,8 @@
                 <td id="dato2">
                     <img id="mensaje" src="imagen/mensaje.png">
                 </td>
-                <td id="dato2">
-                    <b>
+                <td id="dato">
+                    <b >
                         lilianagallegom@gmail.com www.linkedin.com/in/lilianagallegom
                     </b>
                 </td>
@@ -68,7 +73,7 @@
                 <td id="dato2">
                     <img id="direccion" src="imagen/direccion.png">
                 </td>
-                <td id="dato4">
+                <td id="dato">
                     <b>
                         Multifamiliares del jordan Bloque 41 Apto 202
                     </b>
@@ -153,8 +158,8 @@
         </table>
     </div>
     <div id="columna2">
-        <table>
-            <tr>
+        <table >
+            <tr id="txt">
                 <td id="col1">
                     <img id="imgexp" src="imagen/experiencia.png">
                 </td>
@@ -162,84 +167,98 @@
                 <td id="col3">
                     EXPERIENCIA
                 </td>
-            </tr>    
-        </table>
-        
-        <table id="exp">
-            <tr >
-                <td id="col4">
-                    <b>
-                    LIDER DE ALIMENTOS Y BEBIDAS
-                </b>
+                
+            </tr id="txt">  
+            <tr>
+                <td>
+                <button id="boton" onclick="mostrarexp()">Mostrar</button>
                 </td>
-                <td id="col5">
-                    <b>
-                        2019-2020
-                    </b>
-                </td>
-            </tr>
-        </table>
-        <table id="exp">
-            <tr >
-                <td id="txtexp">
-                    
-                        Administración y supervisión del restaurante del Hotel Lusitania de Ibagué,
-                        control de calidad e implementación de protocolos y programas de BPM.
-                    
-                </td>
-            </tr>
-        </table>       
-        <br/>
-        <table id="exp">
-            <tr >
-                <td id="col4">
-                    <b>
-                        INGENIERA DE ALIMENTOS
-                    </b>
-                </td>
-                <td id="col5">
-                    <b>
-                        2019-2019
-                    </b>
-                </td>
+                
             </tr>  
         </table>
-        
-        <table id="exp">
-            <tr>
-                <td id="txtexp">
-                    Administración y supervisión del servicio de alimentación de la cárcel de
-                    Ibagué, control de calidad e implementación de protocolos y programas de 
-                    BPM. 
-                </td>
-            </tr>
-        </table>
-        <br/>
-        <table id="exp">
-            <tr >
-                <td id="col4">
-                    <b>
-                        INGENIERA DE ALIMENTOS
+            
+        <div id="texto">
+            <table id="exp">
+                <tr id="txt">
+                    <td>
+                        <button id="boton" onclick="ocultarexp()">Ocultar</button>
+                    </td>
+                </tr> 
+                <tr id="txt" >
+                    <td id="col4">
+                        <b>
+                        LIDER DE ALIMENTOS Y BEBIDAS
                     </b>
-                </td>
-                <td id="col5">
-                    <b>
-                        2018-2019
-                    </b>
-                </td>
-            </tr> 
-        </table>
-        <table id="exp">
-            <tr>
-                <td id="txtexp">
-                    Administración y supervisión del servicio de alimentación de la cárcel de
-                    Ibagué, control de calidad e implementación de protocolos y programas de 
-                    BPM. 
-                </td>
-            </tr>
-        </table>
+                    </td>
+                    <td id="col5">
+                        <b>
+                            2019-2020
+                        </b>
+                    </td>
+                </tr>
+            </table>
+            <table id="exp">
+                <tr id="txt">
+                    <td id="txtexp">
+                        
+                            Administración y supervisión del restaurante del Hotel Lusitania de Ibagué,
+                            control de calidad e implementación de protocolos y programas de BPM.
+                        
+                    </td>
+                </tr>
+            </table>       
+            <br/>
+            <table id="exp">
+                <tr id="txt">
+                    <td id="col4">
+                        <b>
+                            INGENIERA DE ALIMENTOS
+                        </b>
+                    </td>
+                    <td id="col5">
+                        <b>
+                            2019-2019
+                        </b>
+                    </td>
+                </tr>  
+            </table>
+            
+            <table id="exp">
+                <trid="txt">
+                    <td id="txtexp">
+                        Administración y supervisión del servicio de alimentación de la cárcel de
+                        Ibagué, control de calidad e implementación de protocolos y programas de 
+                        BPM. 
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table id="exp">
+                <tr id="txt">
+                    <td id="col4">
+                        <b>
+                            INGENIERA DE ALIMENTOS
+                        </b>
+                    </td>
+                    <td id="col5">
+                        <b>
+                            2018-2019
+                        </b>
+                    </td>
+                </tr> 
+            </table>
+            <table id="exp">
+                <tr id="txt">
+                    <td id="txtexp">
+                        Administración y supervisión del servicio de alimentación de la cárcel de
+                        Ibagué, control de calidad e implementación de protocolos y programas de 
+                        BPM. 
+                    </td>
+                </tr>
+            </table>
+        </div>
         <br/>
-        <table>
+        <table id="txt">
             <tr>
                 <td id="col1">
                     <img id="imgest" src="imagen/estudios.png">
@@ -248,79 +267,92 @@
                 <td id="col3">
                     EDUCACIÓN
                 </td>
-            </tr>    
-        </table>
-
-        <table id="est">
-            <tr >
-                <td id="col4">
-                    <b>
-                        DIPLOMADO EN HABILIDADES EN DESARROLLO DE SOFTWARE
-                    </b>
-                </td>
-                <td id="col5">
-                    <b>
-                        2021-2021
-                    </b>
-                </td>
-            </tr>
-        </table>
-        
-        <table id="est">
-            <tr >
-                <td id="txtest">
-                    
-                        Linea de enfasis en aplicaciones web, programa MISION TIC 2022.Ministerio TIC y Universidad de Caldas
-                </td>
-            </tr>
-        </table>       
-        <br/>
-        <table id="est">
-            <tr >
-                <td id="col4">
-                    <b>
-                       INGENIERA DE ALIMENTOS 
-                    </b>
-                </td>
-                <td id="col5">
-                    <b>
-                        2006-2012
-                    </b>
-                </td>
-            </tr>  
-        </table>
-        <table id="est">
-            <tr>
-                <td id="txtest">
-                    Facultad de Ingenieria de la Universidad de Caldas. 
-                </td>
-            </tr>
-        </table>
-        <br/>
-        <table id="est">
-            <tr >
-                <td id="col4">
-                    <b>
-                        BACHILLER TÉCNICO
-                    </b>
-                </td>
-                <td id="col5">
-                    <b>
-                        2000-2005
-                    </b>
-                </td>
             </tr> 
-        </table>
-        <table id="est">
             <tr>
-                <td id="txtest">
-                    Especialidad en comercio e informatica. Institución Educativa Técnica Santa Isabel 
+                <td>
+                <button id="boton" onclick="mostrar()">Mostrar</button>
                 </td>
-            </tr>
+                
+            </tr>   
         </table>
+
+        <div id="texto1">
+            <table id="est">
+                <tr id="txt">
+                    <td>
+                        <button id="boton" onclick="ocultar()">Ocultar</button>
+                    </td>
+                </tr> 
+                <tr id="txt">
+                    <td id="col4">
+                        <b>
+                            DIPLOMADO EN HABILIDADES EN DESARROLLO DE SOFTWARE
+                        </b>
+                    </td>
+                    <td id="col5">
+                        <b>
+                            2021-2021
+                        </b>
+                    </td>
+                </tr>
+            </table>
+            
+            <table id="est">
+                <tr id="txt" >
+                    <td id="txtest">
+                        
+                            Linea de enfasis en aplicaciones web, programa MISION TIC 2022.Ministerio TIC y Universidad de Caldas
+                    </td>
+                </tr>
+            </table>       
+            <br/>
+            <table id="est">
+                <tr id="txt" >
+                    <td id="col4">
+                        <b>
+                        INGENIERA DE ALIMENTOS 
+                        </b>
+                    </td>
+                    <td id="col5">
+                        <b>
+                            2006-2012
+                        </b>
+                    </td>
+                </tr>  
+            </table>
+            <table id="est">
+                <tr id="txt">
+                    <td id="txtest">
+                        Facultad de Ingenieria de la Universidad de Caldas. 
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table id="est">
+                <tr id="txt">
+                    <td id="col4">
+                        <b>
+                            BACHILLER TÉCNICO
+                        </b>
+                    </td>
+                    <td id="col5">
+                        <b>
+                            2000-2005
+                        </b>
+                    </td>
+                </tr> 
+            </table>
+            <table id="est">
+                <tr id="txt">
+                    <td id="txtest">
+                        Especialidad en comercio e informatica. Institución Educativa Técnica Santa Isabel 
+                    </td>
+                </tr>
+            </table>
+        </div>
         <br/>
 
-        <table>
+        <table id="txt">
             <tr>
                 <td id="col1">
                     <img id="imgcert" src="imagen/certificados.png">
@@ -329,79 +361,92 @@
                 <td id="col3">
                     CERTIFICADOS
                 </td>
-            </tr>    
-        </table>
-
-        <table id="cert">
-            <tr >
-                <td id="col4">
-                    <b>
-                        DIPLOMADO EN HABILIDADES EN DESARROLLO DE SOFTWARE
-                    </b>
+            </tr>  
+            <tr>
+                <td>
+                <button id="boton" onclick="mostrarcert()">Mostrar</button>
                 </td>
-                <td id="col5">
-                    <b>
-                        2021
-                    </b>
-                </td>
-            </tr>
-        </table>
-        
-        <table id="cert">
-            <tr >
-                <td id="txtcert">
-                    
-                        Linea de enfasis en aplicaciones web, programa MISION TIC 2022.Intensidad horaria de 800 horas. Ministerio TIC y Universidad de Caldas
-                </td>
-            </tr>
-        </table>       
-        <br/>
-        <table id="cert">
-            <tr >
-                <td id="col4">
-                    <b>
-                        DIPLOMADO EN AUDITORÍA DE LA CALIDAD-ISO 19011 DE 2012
-                    </b>
-                </td>
-                <td id="col5">
-                    <b>
-                        2017
-                    </b>
-                </td>
+                
             </tr>  
         </table>
-        <table id="cert">
-            <tr>
-                <td id="txtcert">
-                    Modalidad virtual. Intensidad horaria de 120 horas. Politécnico de Colombia
-                </td>
-            </tr>
-        </table>
-        <br/>
-        <table id="cert">
-            <tr >
-                <td id="col4">
-                    <b>
-                       INGENIERA DE ALIMENTOS 
-                    </b>
-                </td>
-                <td id="col5">
-                    <b>
-                        2012
-                    </b>
-                </td>
-            </tr>  
-        </table>
-        <table id="cert">
-            <tr>
-                <td id="txtcert">
-                    Facultad de Ingenieria de la Universidad de Caldas. 
-                </td>
-            </tr>
-        </table>
+
+        <div id="texto2">
+            <table id="cert">
+                <tr id="txt">
+                    <td>
+                        <button id="boton" onclick="ocultarcert()">Ocultar</button>
+                    </td>
+                </tr> 
+                <tr id="txt">
+                    <td id="col4">
+                        <b>
+                            DIPLOMADO EN HABILIDADES EN DESARROLLO DE SOFTWARE
+                        </b>
+                    </td>
+                    <td id="col5">
+                        <b>
+                            2021
+                        </b>
+                    </td>
+                </tr>
+            </table>
+            
+            <table id="cert">
+                <tr id="txt">
+                    <td id="txtcert">
+                        
+                            Linea de enfasis en aplicaciones web, programa MISION TIC 2022.Intensidad horaria de 800 horas. Ministerio TIC y Universidad de Caldas
+                    </td>
+                </tr>
+            </table>       
+            <br/>
+            <table id="cert">
+                <tr id="txt">
+                    <td id="col4">
+                        <b>
+                            DIPLOMADO EN AUDITORÍA DE LA CALIDAD-ISO 19011 DE 2012
+                        </b>
+                    </td>
+                    <td id="col5">
+                        <b>
+                            2017
+                        </b>
+                    </td>
+                </tr>  
+            </table>
+            <table id="cert">
+                <tr id="txt">
+                    <td id="txtcert">
+                        Modalidad virtual. Intensidad horaria de 120 horas. Politécnico de Colombia
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table id="cert">
+                <tr id="txt">
+                    <td id="col4">
+                        <b>
+                        INGENIERA DE ALIMENTOS 
+                        </b>
+                    </td>
+                    <td id="col5">
+                        <b>
+                            2012
+                        </b>
+                    </td>
+                </tr>  
+            </table>
+            <table id="cert">
+                <tr id="txt">
+                    <td id="txtcert">
+                        Facultad de Ingenieria de la Universidad de Caldas. 
+                    </td>
+                </tr>
+            </table>
+        </div>
         <br/>
 
-        <table>
+        <table id="txt">
             <tr>
                 <td id="col1">
                     <img id="imgref" src="imagen/referencia.png">
@@ -410,89 +455,111 @@
                 <td id="col3">
                     REFERENCIAS
                 </td>
-            </tr>    
+            </tr>  
+            <tr>
+                <td>
+                <button id="boton" onclick="mostrarref()">Mostrar</button>
+                </td>
+                
+            </tr>  
         </table>
-        <table id="ref">
-            <tr >
-                <td id="col6">
-                    <b>
-                        DAISSY PAVEL TORRES 
-                    </b>
-                </td>
-                <td id="col7">
-                    <b>
-                        OLGA YANETH GALLEGO
-                    </b>
-                </td>
-            </tr> 
-            <tr id="dato3">
-                <td id="col8">
-                    Ingeniera de Alimentos    
-                    
-                </td>
-                <td id="col9">
-                    Trabajadora Social
-                </td>
-            </tr> 
-            <tr id="dato3">
-                <td id="col8">  
-                    +57 3006092829
-                </td>
-                <td id="col9">  
-                    +57 3127364238
-                </td>
-            </tr>
-            <tr id="dato3">
-                <td id="col8">  
-                    pasha87@hotmail.com
-                </td>
-                <td id="col9">  
-                    yanethgallego@gmail.com
-                </td>
-            </tr>
-        </table>
-        <br>
-        <table id="ref">
-            <tr >
-                <td id="col6">
-                    <b>
-                        MOIRA ROXANA CAIAFFA
-                    </b>
-                </td>
-                <td id="col7">
-                    <b>
-                        GERMAN GALLEGO SIERRA
-                    </b>
-                </td>
-            </tr> 
-            <tr id="dato3">
-                <td id="col8">
-                    Nuticionista y Dietista    
-                    
-                </td>
-                <td id="col9">
-                    Docente
-                </td>
-            </tr> 
-            <tr id="dato3">
-                <td id="col8">  
-                    +57 3008038613
-                </td>
-                <td id="col9">  
-                    +57 3133320351
-                </td>
-            </tr>
-            <tr id="dato3">
-                <td id="col8">  
-                    moira_roxana@hotmail.com 
-                </td>
-                <td id="col9">  
-                    gegasi@gmail.com
-                </td>
-            </tr>
-        </table>
+        <div id="texto3">
+            <table id="ref">
+                <trid="txt">
+                    <td>
+                        <button id="boton" onclick="ocultarref()">Ocultar</button>
+                    </td>
+                </tr> 
+                <tr id="txt" >
+                    <td id="col6">
+                        <b>
+                            DAISSY PAVEL TORRES 
+                        </b>
+                    </td>
+                    <td id="col7">
+                        <b>
+                            OLGA YANETH GALLEGO
+                        </b>
+                    </td>
+                </tr> 
+                <tr id="dato3">
+                    <td id="col8">
+                        Ingeniera de Alimentos    
+                        
+                    </td>
+                    <td id="col9">
+                        Trabajadora Social
+                    </td>
+                </tr> 
+                <tr id="dato3">
+                    <td id="col8">  
+                        +57 3006092829
+                    </td>
+                    <td id="col9">  
+                        +57 3127364238
+                    </td>
+                </tr>
+                <tr id="dato3">
+                    <td id="col8">  
+                        pasha87@hotmail.com
+                    </td>
+                    <td id="col9">  
+                        yanethgallego@gmail.com
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table id="ref">
+                <tr >
+                    <td id="col6">
+                        <b>
+                            MOIRA ROXANA CAIAFFA
+                        </b>
+                    </td>
+                    <td id="col7">
+                        <b>
+                            GERMAN GALLEGO SIERRA
+                        </b>
+                    </td>
+                </tr> 
+                <tr id="dato3">
+                    <td id="col8">
+                        Nuticionista y Dietista    
+                        
+                    </td>
+                    <td id="col9">
+                        Docente
+                    </td>
+                </tr> 
+                <tr id="dato3">
+                    <td id="col8">  
+                        +57 3008038613
+                    </td>
+                    <td id="col9">  
+                        +57 3133320351
+                    </td>
+                </tr>
+                <tr id="dato3">
+                    <td id="col8">  
+                        moira_roxana@hotmail.com 
+                    </td>
+                    <td id="col9">  
+                        gegasi@gmail.com
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-
+    <br>
+    <div>
+        <img id="imghv" src="imagen/hvnaranja.png">      
+    </div>
+    <div>
+        <img id="imghv" src="imagen/hvverde.png">
+    </div>
+    <div>
+        <img id="imghv" src="imagen/hvvioleta.png">
+    </div>
 </body>
 
 </html>
